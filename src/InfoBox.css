@@ -1,0 +1,55 @@
+.infoBox {
+  flex: 1;
+  cursor: pointer;
+}
+
+.infoBox:not(:last-child) {
+  margin-right: 15px;
+}
+
+.infoBox--selected-cases {
+  border-top: 10px solid #ffa500;
+  color: #ffa500;
+}
+
+.infoBox--selected-recovered {
+  border-top: 10px solid #7dd71d;
+}
+
+.infoBox--selected-deaths {
+  border-top: 10px solid #cc1034;
+}
+
+.infoBox__cases-cases {
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox__cases-recovered {
+  color: #7dd71d;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox__cases-deaths {
+  color: #cc1034;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox__total {
+  color: #6c757d;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  margin-top: 15px !important;
+}
+
+@media (max-width: 990px) {
+  .infoBox {
+    margin-bottom: 1rem;
+  }
+}
